@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente - Help Desk</title>
+</head>
+<body>
+    <header>
+        <h1>Help Desk UTM</h1>
+        <p>Sistema de Gestión de Incidentes</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Ver Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Reportar Nuevo Incidente</h2>
+            
+            <article>
+                <form action="#" method="POST">
+                    <label for="titulo">Título del Incidente:</label><br>
+                    <input type="text" id="titulo" name="titulo" required><br><br>
+
+                    <label for="categoria">Categoría:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Red">Red</option>
+                        <option value="Hardware">Hardware</option>
+                        <option value="Software">Software</option>
+                    </select><br><br>
+
+                    <label>Prioridad:</label><br>
+                    <input type="radio" id="alta" name="prioridad" value="Alta" required>
+                    <label for="alta">Alta</label><br>
+                    <input type="radio" id="media" name="prioridad" value="Media">
+                    <label for="media">Media</label><br>
+                    <input type="radio" id="baja" name="prioridad" value="Baja">
+                    <label for="baja">Baja</label><br><br>
+
+                    <label for="descripcion">Descripción Detallada:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="6" cols="50" required></textarea><br><br>
+
+                    <button type="submit">Reportar Incidente</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Universidad Técnica de Manabí - Help Desk</p>
+        <p>Desarrollado por: Diana Carolina Acuña Acuña</p>
+    </footer>
+</body>
+</html>
